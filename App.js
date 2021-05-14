@@ -74,6 +74,7 @@ function freshDeck() {
 }
 
 function startGame() {
+  alert("Open Console to play!");
   winner = false;
   const deck = new Deck();
   const deckMid = Math.ceil(deck.numberOfCards / 2);

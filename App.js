@@ -63,7 +63,7 @@ class card {
 }
 
 function statPt() {
-  num = Math.floor(Math.random() * 3);
+  num = Math.floor(Math.random() * 50);
   return num;
 }
 
@@ -118,7 +118,7 @@ function playerTurn() {
   let playerCard = playerDeck.cards.shift();
   let compCard = compDeck.cards.shift();
   let limboCards = limboDeck.cards.splice(0, limboDeck.cards.length);
-  console.log(limboCards);
+  console.log("Limbo:", limboCards);
   let stat =
     prompt(`--------------------------    ${playerCard.name}    --------------------------
 Health: ${playerCard.health} 
